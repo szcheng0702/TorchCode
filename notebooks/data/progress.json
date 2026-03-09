@@ -1,0 +1,50 @@
+{
+  "relu": {
+    "status": "solved",
+    "solved_at": "2026-03-08T21:26:31.255088",
+    "best_time": 0.09149187499974687,
+    "attempts": 1
+  },
+  "softmax": {
+    "status": "solved",
+    "solved_at": "2026-03-08T21:35:42.322743",
+    "best_time": 0.008136666999916997,
+    "attempts": 1
+  },
+  "cross_entropy": {
+    "status": "solved",
+    "attempts": 3,
+    "solved_at": "2026-03-08T21:51:07.250464",
+    "best_time": 0.010724959000526724
+  },
+  "dropout": {
+    "status": "solved",
+    "solved_at": "2026-03-08T22:02:57.169636",
+    "best_time": 0.012451457999759441,
+    "attempts": 2
+  },
+  "embedding": {
+    "status": "solved",
+    "solved_at": "2026-03-08T22:14:53.652104",
+    "best_time": 0.007462457999736216,
+    "attempts": 3
+  },
+  "gelu": {
+    "status": "solved",
+    "solved_at": "2026-03-08T22:24:34.451622",
+    "best_time": 0.014327790999232093,
+    "attempts": 1
+  },
+  "weight_init": {
+    "status": "solved",
+    "solved_at": "2026-03-08T22:29:50.664237",
+    "best_time": 0.018586915999549092,
+    "attempts": 3
+  },
+  "gradient_clipping": {
+    "status": "solved",
+    "solved_at": "2026-03-09T00:32:00.034324",
+    "best_time": 0.011656123999273404,
+    "attempts": 1
+  }
+}
