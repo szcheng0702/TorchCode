@@ -356,6 +356,13 @@ Thanks to everyone who has contributed to TorchCode.
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/szcheng0702">
+                    <img src="https://avatars.githubusercontent.com/u/11022898?v=4" width="100;" alt="szcheng0702"/>
+                    <br />
+                    <sub><b>szcheng0702</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/Ando233">
                     <img src="https://avatars.githubusercontent.com/u/74404658?v=4" width="100;" alt="Ando233"/>
                     <br />
