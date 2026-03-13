@@ -46,5 +46,35 @@
     "solved_at": "2026-03-09T00:32:00.034324",
     "best_time": 0.011656123999273404,
     "attempts": 1
+  },
+  "gradient_accumulation": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-09T00:58:24.346939",
+    "best_time": 0.019151709000652772
+  },
+  "linear": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-09T01:08:53.706684",
+    "best_time": 0.013117166998199536
+  },
+  "layernorm": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-09T01:37:36.176205",
+    "best_time": 0.008832915999960278
+  },
+  "attention": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-09T02:10:59.379589",
+    "best_time": 0.007049956999708229
+  },
+  "mha": {
+    "status": "solved",
+    "attempts": 5,
+    "solved_at": "2026-03-10T06:57:29.373144",
+    "best_time": 0.02119291599956341
   }
 }
