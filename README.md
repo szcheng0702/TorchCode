@@ -65,6 +65,23 @@ No cloud. No signup. No GPU needed. Just `make run` — or try it instantly on H
 
 Or open any problem directly in Google Colab — every notebook has an [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/duoan/TorchCode/blob/master/templates/01_relu.ipynb) badge.
 
+### Option 0b — Use the judge in Colab (pip)
+
+In Google Colab, install the judge from PyPI so you can run `check(...)` without cloning the repo:
+
+```bash
+!pip install torch-judge
+```
+
+Then in a notebook cell:
+
+```python
+from torch_judge import check, status, hint, reset_progress
+status()           # list all problems and your progress
+check("relu")      # run tests for the "relu" task
+hint("relu")       # show a hint
+```
+
 ### Option 1 — Pull the pre-built image (fastest)
 
 ```bash
@@ -260,6 +277,35 @@ No registration needed. The judge picks it up automatically.
 
 ---
 
+## 📦 Publishing `torch-judge` to PyPI (maintainers)
+
+The judge is published as a separate package so Colab/users can `pip install torch-judge` without cloning the repo.
+
+### Automatic (GitHub Action)
+
+Pushing to `master` after changing the package version triggers [`.github/workflows/pypi-publish.yml`](.github/workflows/pypi-publish.yml), which builds and uploads to PyPI. No git tag is required.
+
+1. **Bump version** in `torch_judge/_version.py` (e.g. `__version__ = "0.1.1"`).
+2. **Configure PyPI Trusted Publisher** (one-time):
+   - PyPI → Your project **torch-judge** → **Publishing** → **Add a new pending publisher**
+   - Owner: `duoan`, Repository: `TorchCode`, Workflow: `pypi-publish.yml`, Environment: (leave empty)
+   - Run the workflow once (push a version bump to `master` or **Actions → Publish torch-judge to PyPI → Run workflow**); PyPI will then link the publisher.
+3. **Release**: commit the version bump and `git push origin master`.
+
+Alternatively, use an API token: add repository secret `PYPI_API_TOKEN` (value = `pypi-...` from PyPI) and set `TWINE_USERNAME=__token__` and `TWINE_PASSWORD` from that secret in the workflow if you prefer not to use Trusted Publishing.
+
+### Manual
+
+```bash
+pip install build twine
+python -m build
+twine upload dist/*
+```
+
+Version is in `torch_judge/_version.py`; bump it before each release.
+
+---
+
 ## ❓ FAQ
 
 <details>
@@ -291,6 +337,44 @@ The judge runs your function against multiple test cases using <code>torch.allcl
 <br>
 Anyone preparing for ML/AI engineering interviews at top tech companies, or anyone who wants to deeply understand how PyTorch operations work under the hood.
 </details>
+
+---
+
+## 🤝 Contributors
+
+Thanks to everyone who has contributed to TorchCode.
+
+<!-- readme: contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/duoan">
+                    <img src="https://avatars.githubusercontent.com/u/2378740?v=4" width="100;" alt="duoan"/>
+                    <br />
+                    <sub><b>duoan</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Ando233">
+                    <img src="https://avatars.githubusercontent.com/u/74404658?v=4" width="100;" alt="Ando233"/>
+                    <br />
+                    <sub><b>Ando233</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ThierryHJ">
+                    <img src="https://avatars.githubusercontent.com/u/51846529?v=4" width="100;" alt="ThierryHJ"/>
+                    <br />
+                    <sub><b>ThierryHJ</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
+<!-- readme: contributors -end -->
+
+Auto-generated from the [GitHub contributors graph](https://github.com/duoan/TorchCode/graphs/contributors) with avatars and GitHub usernames.
 
 ---
 
