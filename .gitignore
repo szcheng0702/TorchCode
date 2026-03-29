@@ -6,6 +6,11 @@ data/progress.json
 data/*.db
 .DS_Store
 
+# PyPI build artifacts
+dist/
+build/
+.venv/
+
 # JupyterLab extension build artifacts
 labextension/lib/
 labextension/node_modules/

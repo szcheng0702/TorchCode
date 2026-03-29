@@ -1,8 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-setup(
-    name="torch_judge",
-    version="0.1.0",
-    packages=find_packages(),
-    python_requires=">=3.10",
-)
+# Keep setup.py as a thin shim; package metadata lives in pyproject.toml.
+setup()
