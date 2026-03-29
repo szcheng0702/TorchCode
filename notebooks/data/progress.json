@@ -13,15 +13,15 @@
   },
   "cross_entropy": {
     "status": "solved",
-    "attempts": 3,
-    "solved_at": "2026-03-08T21:51:07.250464",
+    "attempts": 4,
+    "solved_at": "2026-03-16T00:17:03.840856",
     "best_time": 0.010724959000526724
   },
   "dropout": {
     "status": "solved",
-    "solved_at": "2026-03-08T22:02:57.169636",
+    "solved_at": "2026-03-16T00:22:51.942046",
     "best_time": 0.012451457999759441,
-    "attempts": 2
+    "attempts": 4
   },
   "embedding": {
     "status": "solved",
@@ -49,8 +49,8 @@
   },
   "gradient_accumulation": {
     "status": "solved",
-    "attempts": 2,
-    "solved_at": "2026-03-09T00:58:24.346939",
+    "attempts": 3,
+    "solved_at": "2026-03-20T19:10:01.446643",
     "best_time": 0.019151709000652772
   },
   "linear": {
@@ -76,5 +76,161 @@
     "attempts": 5,
     "solved_at": "2026-03-10T06:57:29.373144",
     "best_time": 0.02119291599956341
+  },
+  "batchnorm": {
+    "status": "solved",
+    "attempts": 5,
+    "solved_at": "2026-03-13T06:21:41.264795",
+    "best_time": 0.0078388760011876
+  },
+  "rmsnorm": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-13T18:42:52.996238",
+    "best_time": 0.008073248995060567
+  },
+  "causal_attention": {
+    "status": "solved",
+    "solved_at": "2026-03-13T19:12:45.655445",
+    "best_time": 0.0477813329998753,
+    "attempts": 1
+  },
+  "gqa": {
+    "status": "solved",
+    "solved_at": "2026-03-13T23:35:39.898234",
+    "best_time": 0.015579082995827775,
+    "attempts": 2
+  },
+  "sliding_window": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-13T20:06:49.600626",
+    "best_time": 0.035127668001223356
+  },
+  "linear_attention": {
+    "status": "solved",
+    "solved_at": "2026-03-13T22:49:21.964798",
+    "best_time": 0.1102709589904407,
+    "attempts": 1
+  },
+  "kv_cache": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-13T23:41:11.786522",
+    "best_time": 0.03832579300797079
+  },
+  "gpt2_block": {
+    "status": "solved",
+    "solved_at": "2026-03-15T23:25:50.968671",
+    "best_time": 0.048062333997222595,
+    "attempts": 1
+  },
+  "mlp": {
+    "status": "solved",
+    "solved_at": "2026-03-16T00:05:13.551420",
+    "best_time": 0.014859832997899503,
+    "attempts": 1
+  },
+  "cross_attention": {
+    "status": "solved",
+    "solved_at": "2026-03-16T05:39:23.281008",
+    "best_time": 0.028216958016855642,
+    "attempts": 2
+  },
+  "rope": {
+    "status": "solved",
+    "solved_at": "2026-03-16T06:38:21.785515",
+    "best_time": 0.031137042009504512,
+    "attempts": 1
+  },
+  "lora": {
+    "status": "solved",
+    "solved_at": "2026-03-16T18:27:10.482432",
+    "best_time": 0.022499291982967407,
+    "attempts": 1
+  },
+  "vit_patch": {
+    "status": "solved",
+    "solved_at": "2026-03-16T19:05:23.392214",
+    "best_time": 0.017308499984210357,
+    "attempts": 1
+  },
+  "moe": {
+    "status": "solved",
+    "solved_at": "2026-03-16T22:34:17.297071",
+    "best_time": 0.04235479100316297,
+    "attempts": 1
+  },
+  "adam": {
+    "status": "solved",
+    "solved_at": "2026-03-17T05:38:16.716286",
+    "best_time": 1.31397129301331,
+    "attempts": 1
+  },
+  "flash_attention": {
+    "status": "solved",
+    "attempts": 3,
+    "solved_at": "2026-03-20T18:08:14.743245",
+    "best_time": 0.0896053739998024
+  },
+  "cosine_lr": {
+    "status": "solved",
+    "solved_at": "2026-03-20T19:04:22.572395",
+    "best_time": 0.002771666942862794,
+    "attempts": 1
+  },
+  "topk_sampling": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-20T20:29:47.127739",
+    "best_time": 0.11615762603469193
+  },
+  "beam_search": {
+    "status": "solved",
+    "solved_at": "2026-03-20T21:30:54.037259",
+    "best_time": 0.006706207001116127,
+    "attempts": 2
+  },
+  "speculative_decoding": {
+    "status": "solved",
+    "attempts": 5,
+    "solved_at": "2026-03-20T23:23:24.148164",
+    "best_time": 0.06163437501527369
+  },
+  "dpo_loss": {
+    "status": "solved",
+    "attempts": 3,
+    "solved_at": "2026-03-21T06:10:01.033485",
+    "best_time": 0.017343415995128453
+  },
+  "grpo_loss": {
+    "status": "solved",
+    "solved_at": "2026-03-22T04:27:50.185152",
+    "best_time": 0.018120916007319465,
+    "attempts": 1
+  },
+  "ppo_loss": {
+    "status": "solved",
+    "attempts": 6,
+    "solved_at": "2026-03-22T04:37:35.568916",
+    "best_time": 0.007242499035783112
+  },
+  "int8_quantization": {
+    "status": "solved",
+    "attempts": 5,
+    "solved_at": "2026-03-22T04:50:30.070861",
+    "best_time": 0.013332208996871486
+  },
+  "linear_regression": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-03-22T05:33:27.628363",
+    "best_time": 0.4419372919946909
+  },
+  "bpe": {
+    "status": "solved",
+    "attempts": 6,
+    "solved_at": "2026-03-22T06:11:25.766713",
+    "best_time": 0.0004895840247627348
   }
 }
